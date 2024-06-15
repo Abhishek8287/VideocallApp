@@ -1,0 +1,7 @@
+@import "../assets/styles/_mixins.scss";
+
+.navbar {
+  @include sm {
+    background-color: red;
+  }
+}

@@ -1,0 +1,150 @@
+.options {
+  background-color: #744df4;
+  height: 10vh;
+  margin: 0 auto;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  outline: none;
+  /* border: none; Ensure there is no border */
+  border-radius: 10px;
+}
+
+.options button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.4s;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.options button:hover {
+  transform: scale(1.1);
+}
+
+.options .bg-grey {
+  background-color: #8f8f8f;
+}
+
+.options .bg-grey:hover {
+  background-color: #b0b0b0;
+}
+
+.options .red-btn {
+  border-radius: 35%;
+  padding: 7px 15px;
+  background-color: #c20505;
+  color: white;
+  transition: background-color 0.4s, transform 0.4s;
+}
+
+.options .red-btn:hover {
+  background-color: #e44646;
+  transform: scale(1.1);
+}
+
+@media (max-width: 576px) {
+  .options {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.options-menu {
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  outline: none;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.options-menu div {
+  padding: 0.5rem;
+}
+
+.options-menu input {
+  border-radius: 10px;
+  border: 1px solid #9e9e9e;
+  outline: none;
+  padding: 10px;
+  width: 100%;
+}
+
+.options-menu .btn-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.options-menu .btn-div h3 {
+  padding: 0 10px;
+}
+
+.options-menu .btn-div button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.w100 {
+  width: 45%;
+}
+
+@media (max-width: 576px) {
+  .w100 {
+    width: 100%;
+  }
+}
+
+.call-div p {
+  font-size: 20px;
+  margin: 0;
+}
+
+.call-div .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the button */
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.options button:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

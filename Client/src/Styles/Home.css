@@ -1,0 +1,13 @@
+.container {
+  height: calc(
+    100vh - 72px
+  ); /* Adjust 64px to match the height of your navbar */
+  overflow-y: hidden;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  border-radius: 50%;
+}
