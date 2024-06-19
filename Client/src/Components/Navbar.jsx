@@ -18,16 +18,7 @@ function Navbar() {
         <div className="right">
           <ul className="flex items-center">
             <li className="mx-10 hover:text-[#7E30E1] hover:underline duration-500 hover:ease-in-out">
-              <Link to="/about">About</Link>
-            </li>
-            <li className="mx-10 hover:text-[#7E30E1] hover:underline duration-500 hover:ease-in-out">
-              <a
-                href="https://github.com/Abhishek8287"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
+              <Link to="/github">github</Link>
             </li>
           </ul>
         </div>

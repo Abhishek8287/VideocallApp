@@ -2,11 +2,12 @@
 import React from "react";
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import About from "./Pages/About";
+
 import Home from "./Pages/Home";
 import Join from "./Pages/Join";
 import Meet from "./Pages/Meet";
 import { ContextProvider } from "./SocketContext";
+import Github from "./Pages/Github";
 
 function App() {
   useEffect(() => {
@@ -20,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/join" element={<Join />} />
           <Route path="/meet" element={<Meet />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/github" element={<Github />} />
         </Routes>
       </ContextProvider>
     </Router>
