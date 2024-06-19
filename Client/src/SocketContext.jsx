@@ -36,6 +36,7 @@ const ContextProvider = ({ children }) => {
   const myVideo = useRef();
   const userVideo = useRef();
   const connectionRef = useRef();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (!navigator.onLine) alert("Connect to internet!");
@@ -157,7 +158,8 @@ const ContextProvider = ({ children }) => {
     if (connectionRef.current) connectionRef.current.destroy();
 
     message.success("Meet Ended");
-    window.location.reload();
+    //window.location.reload();
+    navigate("/meet");
   };
 
   const updateVideoStatus = () => {

@@ -14,16 +14,16 @@ function App() {
   }, []);
 
   return (
-    <ContextProvider>
-      <Router>
+    <Router>
+      <ContextProvider>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/join" element={<Join />} />
           <Route path="/meet" element={<Meet />} />
           <Route path="/about" element={<About />} />
         </Routes>
-      </Router>
-    </ContextProvider>
+      </ContextProvider>
+    </Router>
   );
 }
 
